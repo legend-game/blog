@@ -51,9 +51,9 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'bblog.urls'
+ROOT_URLCONF = 'blog.urls'
 
-WSGI_APPLICATION = 'bblog.wsgi.application'
+WSGI_APPLICATION = 'blog.wsgi.application'
 
 
 # Database
