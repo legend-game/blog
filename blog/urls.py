@@ -13,7 +13,7 @@ sitemaps = {
 urlpatterns = patterns('',
     # Examples:
     url(r'^$', RedirectView.as_view(url='weblog/'), name='home'),
-    url(r'weblog/', include('weblog.urls')),
+    url(r'^weblog/', include('weblog.urls')),
     url(r'^sitemap.xml$', 'django.contrib.sitemaps.views.sitemap',
             {'sitemaps':sitemaps}),
     url(r'^admin/', include(admin.site.urls)),
