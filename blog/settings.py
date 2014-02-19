@@ -90,3 +90,12 @@ STATIC_ROOT = os.path.join(BASE_DIR,'static')
 STATIC_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
+
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+    'django.contrib.auth.context_processors.auth',
+    'weblog.context_processors.weblog_info',
+)
+
+WEBLOG_TITLE = "Bottle"
+WEBLOG_DESCRIPTION = "Bottle team weblog"
