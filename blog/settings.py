@@ -1,3 +1,4 @@
+#encoding:utf-8
 """
 Django settings for bblog project.
 
@@ -37,7 +38,10 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sitemaps',
+    #'debug_toolbar',
 )
+
+DEBUG_TOOLBAR_PATCH_SETTINGS = True
 
 INSTALLED_APPS += (
     'weblog',
@@ -50,6 +54,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    #'debug_toolbar.middleware.DebugToolbarMiddleware',
 )
 
 ROOT_URLCONF = 'blog.urls'
@@ -97,5 +102,6 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'weblog.context_processors.weblog_info',
 )
 
+WEBLOG_PER_PAGE = 2  # 最多显示多少数据
 WEBLOG_TITLE = "Bottle"
 WEBLOG_DESCRIPTION = "Bottle team weblog"
