@@ -102,6 +102,6 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'weblog.context_processors.weblog_info',
 )
 
-WEBLOG_PER_PAGE = 2  # 最多显示多少数据
+WEBLOG_PER_PAGE = 100  # 最多显示多少数据
 WEBLOG_TITLE = "Bottle"
 WEBLOG_DESCRIPTION = "Bottle team weblog"
