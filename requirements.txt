@@ -1,2 +1,3 @@
 django
+gunicorn
 https://github.com/duanhongyi/weblog/archive/master.zip#egg=weblog
