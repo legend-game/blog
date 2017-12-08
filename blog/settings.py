@@ -118,5 +118,5 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 )
 
 WEBLOG_PER_PAGE = 100  # 最多显示多少数据
-WEBLOG_TITLE = "Bottle"
-WEBLOG_DESCRIPTION = "Bottle team weblog"
+WEBLOG_TITLE = "The legend of Qin"
+WEBLOG_DESCRIPTION = "The state of Qin has eliminated six countries and then dominating the world."
