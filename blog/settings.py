@@ -92,10 +92,8 @@ TEMPLATES = [
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
-                'django.template.context_processors.debug',
-                'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
-                'django.contrib.messages.context_processors.messages',
+                'weblog.context_processors.weblog_info',
             ],
         },
     },
@@ -109,12 +107,6 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR,'static')
 STATIC_DIRS = (
     os.path.join(BASE_DIR, 'static'),
-)
-
-
-TEMPLATE_CONTEXT_PROCESSORS = (
-    'django.contrib.auth.context_processors.auth',
-    'weblog.context_processors.weblog_info',
 )
 
 WEBLOG_PER_PAGE = 100  # 最多显示多少数据
