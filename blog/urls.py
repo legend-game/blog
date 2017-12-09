@@ -15,7 +15,7 @@ sitemaps = {
 
 urlpatterns = [
     re_path(r'^$', RedirectView.as_view(url='weblog/'), name='home'),
-    re_path(r'^weblog', include(weblog.urls)),
+    re_path(r'^weblog/', include(weblog.urls)),
     re_path(r'^sitemap.xml$', sitemap, {'sitemaps': sitemaps},
         name='django.contrib.sitemaps.views.sitemap'),
     url(r'^admin/', admin.site.urls),
